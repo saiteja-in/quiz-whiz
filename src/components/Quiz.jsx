@@ -66,7 +66,7 @@ const Quiz = () => {
       <div className="quiz-footer">
         <button className="footer-button" onClick={previousQuestion}>Previous</button>
         <button className="footer-button" onClick={nextQuestion}>Next</button>
-        {score}
+        
       </div>
     </div>
   );

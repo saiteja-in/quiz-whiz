@@ -5,6 +5,7 @@ import Quiz from "./components/Quiz.jsx"
 import "./App.css"
 import { useState } from 'react'
 import {GameStateContext} from './helpers/context.jsx'
+import EndScreen from './components/EndScreen.jsx'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <GameStateContext.Provider value={{gameState,setGameState,userName,setUserName,score,setScore}}>
       {gameState==="menu" && <Menu />}
       {gameState==="playing" && <Quiz />}
+      {gameState==="finished" && <EndScreen />}
       </GameStateContext.Provider>
     </div>
     </>
